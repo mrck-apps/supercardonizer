@@ -33,8 +33,8 @@ This is a Next.js project created with Firebase Studio. It's a fun "Luck Machine
     *   **Name:** Choose a name (e.g., `supercardonizer`).
     *   **Region:** Choose a region close to you.
     *   **Branch:** Select your main branch (e.g., `main`).
-    *   **Root Directory:** Leave this blank.
-    *   **Build Command:** `./render-build.sh`
+    *   **Root Directory:** **Leave this blank.** This is very important. If you set this to `src`, the build will fail.
+    *   **Build Command:** `npm install && npm run build`
     *   **Start Command:** `npm start`
     *   **Environment Variables:**
         *   Click **+ Add Environment Variable**.
