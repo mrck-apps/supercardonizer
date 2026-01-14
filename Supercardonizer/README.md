@@ -25,6 +25,8 @@ This is a Next.js project created with Firebase Studio. It's a fun "Luck Machine
 
 ## Deployment on Render.com
 
+This project requires a specific configuration on Render.com to build correctly.
+
 1.  **Push to GitHub:** Make sure your project is in a GitHub repository.
 
 2.  **Create a New Web Service on Render:**
@@ -45,3 +47,7 @@ This is a Next.js project created with Firebase Studio. It's a fun "Luck Machine
 
 4.  **Deploy:**
     *   Click **Create Web Service**. Render will automatically build and deploy your application.
+
+### How the build works on Render
+
+Render starts its build process in the `src` directory. The `src/package.json` file contains a `postinstall` script that tells `npm` to run the actual installation in the parent directory (`..`), where the main `package.json` with all the project dependencies is located. This ensures all dependencies are installed correctly before the `build` and `start` commands (which are defined in the root `package.json`) are executed.
