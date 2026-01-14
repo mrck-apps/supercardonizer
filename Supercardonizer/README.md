@@ -5,17 +5,19 @@ This is a Next.js project created with Firebase Studio. It's a fun "Luck Machine
 ## Running Locally
 
 1.  **Install dependencies:**
+    Run from the root directory:
     ```bash
     npm install
     ```
 
 2.  **Set up environment variables:**
-    Create a `.env` file in the root of the project and add your Gemini API key:
+    Create a `.env` file in the **root** of the project and add your Gemini API key:
     ```
     GEMINI_API_KEY=YOUR_API_KEY
     ```
 
 3.  **Run the development server:**
+    From the **root** directory, run:
     ```bash
     npm run dev
     ```
@@ -31,9 +33,7 @@ This is a Next.js project created with Firebase Studio. It's a fun "Luck Machine
 
 3.  **Configure the service:**
     *   **Name:** Choose a name (e.g., `supercardonizer`).
-    *   **Region:** Choose a region close to you.
-    *   **Branch:** Select your main branch (e.g., `main`).
-    *   **Root Directory:** **Leave this blank.** This is very important. If you set this to `src`, the build will fail.
+    *   **Root Directory:** **`src`** (This is the most important setting).
     *   **Build Command:** `npm install && npm run build`
     *   **Start Command:** `npm start`
     *   **Environment Variables:**
@@ -45,13 +45,3 @@ This is a Next.js project created with Firebase Studio. It's a fun "Luck Machine
 
 4.  **Deploy:**
     *   Click **Create Web Service**. Render will automatically build and deploy your application.
-
-### Troubleshooting on Render
-
-If the build continues to fail with a `.../src/package.json not found` error even though the **Root Directory** is empty, try this as a last resort:
-
-*   **Build Command:** Change it to `cd .. && npm install && npm run build`
-
-This command explicitly tells Render to go up one directory level before running the installation. This should only be necessary if Render incorrectly identifies `src` as the root.
-
-That's it! Your application will be live at the URL provided by Render.

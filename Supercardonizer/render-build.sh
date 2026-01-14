@@ -2,13 +2,13 @@
 # exit on error
 set -o errexit
 
-# Check if package.json exists in the current directory
-if [ ! -f package.json ]; then
-    echo "Error: package.json not found in the current directory ($(pwd))."
-    echo "This is likely due to an incorrect 'Root Directory' setting in Render."
-    echo "Please ensure 'Root Directory' is empty in your Render service settings."
-    exit 1
-fi
+# The Root Directory is set to `src` in Render, so we are in the `src` folder.
+# We need to go up one level to the root to install dependencies.
+cd ..
 
+# Install dependencies from the root package.json
 npm install
+
+# Build the Next.js app located in `src`
+# The build command in the root package.json will handle the `--prefix src` part.
 npm run build
