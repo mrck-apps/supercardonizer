@@ -3,12 +3,9 @@
 set -o errexit
 
 # The Root Directory is set to `src` in Render, so we are in the `src` folder.
-# We need to go up one level to the root to install dependencies.
-cd ..
+# The `postinstall` script in `src/package.json` will run `npm install` in the root.
 
-# Install dependencies from the root package.json
-npm install
-
-# Build the Next.js app located in `src`
-# The build command in the root package.json will handle the `--prefix src` part.
-npm run build
+# The build command from Render's dashboard will take care of the build.
+# This file is kept for compatibility but the main logic is in the dashboard settings
+# and the `src/package.json`.
+echo "Build process managed by Render.com settings and src/package.json postinstall script."
