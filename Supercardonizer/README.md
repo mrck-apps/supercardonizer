@@ -46,4 +46,12 @@ This is a Next.js project created with Firebase Studio. It's a fun "Luck Machine
 4.  **Deploy:**
     *   Click **Create Web Service**. Render will automatically build and deploy your application.
 
+### Troubleshooting on Render
+
+If the build continues to fail with a `.../src/package.json not found` error even though the **Root Directory** is empty, try this as a last resort:
+
+*   **Build Command:** Change it to `cd .. && npm install && npm run build`
+
+This command explicitly tells Render to go up one directory level before running the installation. This should only be necessary if Render incorrectly identifies `src` as the root.
+
 That's it! Your application will be live at the URL provided by Render.
