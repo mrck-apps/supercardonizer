@@ -34,7 +34,6 @@ This is a Next.js project created with Firebase Studio. It's a fun "Luck Machine
     *   **Region:** Choose a region close to you.
     *   **Branch:** Select your main branch (e.g., `main`).
     *   **Root Directory:** Leave this blank.
-    *   **Runtime:** `Node`.
     *   **Build Command:** `./render-build.sh`
     *   **Start Command:** `npm start`
     *   **Environment Variables:**
