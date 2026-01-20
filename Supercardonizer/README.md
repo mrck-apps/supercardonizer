@@ -1,15 +1,22 @@
 # Supercardonizer Luck Machine
 
-## Deployment auf Vercel
+## Deployment auf Vercel (Wichtige Korrektur)
 
-Folgen Sie diesen Anweisungen, um die Anwendung erfolgreich auf Vercel zu deployen:
+Die vorherigen Konfigurationen, die wir für einen anderen Dienst versucht haben, sind die alleinige Ursache für die aktuellen Fehler auf Vercel.
 
-1.  Verbinden Sie Ihr GitHub-Repository mit einem neuen Projekt auf Vercel.
-2.  Vercel wird automatisch erkennen, dass es sich um ein Next.js-Projekt handelt und die optimalen Einstellungen verwenden.
-3.  Im Schritt "Configure Project" müssen Sie **keine Einstellungen ändern**. Lassen Sie das **Root Directory** auf dem Standardwert (leer).
-4.  Klicken Sie auf "Deploy".
+**Die Lösung besteht darin, eine einzige Einstellung in Vercel zu korrigieren.**
 
-Das ist alles. Vercel ist für Next.js-Projekte optimiert und kümmert sich um den Rest.
+### Vercel Projekt-Einstellungen
+
+1.  Gehen Sie zu Ihrem Projekt auf Vercel.
+2.  Öffnen Sie die **Project Settings**.
+3.  Wählen Sie den Reiter **General**.
+4.  Finden Sie die Einstellung **Root Directory**.
+5.  **Stellen Sie sicher, dass dieses Feld komplett leer ist.** Wenn dort `src` oder etwas anderes steht, löschen Sie es. Die Standardeinstellung (leer) ist korrekt.
+
+Vercel erkennt Ihr Next.js-Projekt dann automatisch im Hauptverzeichnis, wo die richtige `package.json` liegt.
+
+Nachdem Sie diese Einstellung gespeichert haben, starten Sie das Deployment neu ("Redeploy"). Das wird den Fehler beheben.
 
 ## Lokale Entwicklung
 
