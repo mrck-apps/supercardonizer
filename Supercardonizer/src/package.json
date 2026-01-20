@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "postinstall": "cd .. && npm install",
+    "preinstall": "cd .. && npm install",
     "build": "cd .. && npm run build"
   }
 }

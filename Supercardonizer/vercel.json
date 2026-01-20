@@ -1,13 +1,7 @@
 {
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/next"
-    }
-  ],
   "functions": {
     "src/app/page.tsx": {
-      "maxDuration": 45
+      "maxDuration": 60
     }
   }
 }
