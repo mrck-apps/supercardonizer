@@ -1,9 +1,5 @@
 # Supercardonizer Luck Machine
 
-## Lokale Entwicklung
-
-Um die Anwendung lokal zu starten, führen Sie `npm install` und dann `npm run dev` aus.
-
 ## Deployment auf Vercel
 
 Folgen Sie diesen Anweisungen, um die Anwendung erfolgreich auf Vercel zu deployen:
@@ -14,3 +10,7 @@ Folgen Sie diesen Anweisungen, um die Anwendung erfolgreich auf Vercel zu deploy
 4.  Klicken Sie auf "Deploy".
 
 Das ist alles. Vercel ist für Next.js-Projekte optimiert und kümmert sich um den Rest.
+
+## Lokale Entwicklung
+
+Um die Anwendung lokal zu starten, führen Sie `npm install` und dann `npm run dev` aus.
