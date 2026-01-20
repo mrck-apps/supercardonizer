@@ -3,5 +3,6 @@
     "src/app/page.tsx": {
       "maxDuration": 60
     }
-  }
+  },
+  "installCommand": "echo '--- Listing files in current directory ---' && ls -R && echo '--- End of file listing ---' && npm install"
 }
