@@ -9,7 +9,7 @@ Um die Anwendung lokal zu starten, führen Sie `npm install` und dann `npm run d
 Folgen Sie diesen Anweisungen, um die Anwendung erfolgreich auf Vercel zu deployen:
 
 1.  Verbinden Sie Ihr GitHub-Repository mit einem neuen Projekt auf Vercel.
-2.  Vercel wird automatisch erkennen, dass es sich um ein Next.js-Projekt handelt.
+2.  Vercel wird automatisch erkennen, dass es sich um ein Next.js-Projekt handelt und die optimalen Einstellungen verwenden.
 3.  Im Schritt "Configure Project" müssen Sie **keine Einstellungen ändern**. Lassen Sie das **Root Directory** auf dem Standardwert (leer).
 4.  Klicken Sie auf "Deploy".
 
